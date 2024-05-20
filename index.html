@@ -28,7 +28,7 @@
         event.preventDefault();
         const name = nameref.current.value;
         const marks = marksref.current.value;
-        studentName.unshift({name,marks})
+        studentName.push({name,marks})
         nameref.current.value="";
         marksref.current.value="";
         renderdata();
